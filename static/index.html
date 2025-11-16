@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Playbacks</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <span class="battle-icon">⚔️</span>
+                <h1>Battle Playbacks</h1>
+            </div>
+            <div class="header-right">
+                <span class="menu-icon">⋯</span>
+            </div>
+        </header>
+
+        <div class="upload-section">
+            <div class="upload-form">
+                <label for="csv-file" class="upload-label">Upload CSV File:</label>
+                <input type="file" id="csv-file" accept=".csv" class="file-input">
+                <button id="upload-btn" class="upload-btn">Upload</button>
+            </div>
+            <div id="session-selector" class="session-selector" style="display: none;">
+                <p class="session-selector-text">Multiple evaluation sessions found. Please select one:</p>
+                <select id="session-select" class="session-select">
+                    <option value="">Select a session...</option>
+                </select>
+                <button id="load-session-btn" class="load-session-btn">Load Session</button>
+            </div>
+        </div>
+
+        <div id="conversations-container" class="conversations-container">
+            <div class="welcome-message">
+                <p>Upload a CSV file to view battle conversations.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
+
